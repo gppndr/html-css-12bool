@@ -20,6 +20,9 @@ body{
     background-color: aliceblue;
 }
 /* #region main  */
+img{
+    max-width: 100%;
+}
 [class*="col-"]{
    aspect-ratio: 1/1;
    border: 1px solid green;
