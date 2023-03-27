@@ -6,3 +6,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* common rules */
+
+.container{
+    max-width: 1200px;
+    margin-inline: auto;
+}
