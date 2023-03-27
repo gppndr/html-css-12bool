@@ -1,0 +1,61 @@
+@import url(./framework.css);
+
+/* reset rules */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* container */
+.container{
+    max-width: 1000px;
+    aspect-ratio: 1/1;
+    margin-inline: auto;
+    padding:2rem;
+}
+
+/* body */
+body{
+    background-color: aliceblue;
+}
+/* #region main  */
+[class*="col-"]{
+   aspect-ratio: 1/1;
+   border: 1px solid green;
+}
+.container .row:nth-child(2), .container .row:nth-child(11), .container .row:not(.first , .last) [class*="col-"]:nth-child(2), .container .row:not(.first, .last) [class*="col-"]:nth-child(11){
+    background-color: white;
+    border: 0;
+ }
+.container .row:nth-child(2) [class*="col-"],.container .row:nth-child(11) [class*="col-"], .container .row:nth-child(12) [class*="col-"]{
+  border: 0;
+}
+ .first [class*="col-"], .last [class*="col-"],  .row [class*="col-"]:first-child, .row [class*="col-"]:last-child{
+    background-color: aliceblue;
+    border: 0;
+ }
+
+ .ws [class*="col-"]:nth-child(odd):not(:first-child){
+    background-color: white;
+ }
+ .ws [class*="col-"]:nth-child(even):not(:last-child){
+    background-color: var(--bluegreen);
+ }
+
+ .bs [class*="col-"]:nth-child(odd):not(:first-child){
+    background-color: var(--bluegreen);
+ }
+ .bs [class*="col-"]:nth-child(even):not(:last-child){
+    background-color: white;
+ }
+
+ .row:nth-child(2) span{
+    transform:rotate(-180deg)
+ }
+
+ .row [class*="col-"]:nth-child(11){
+    transform:rotate(-180deg)
+ }
+ /* #endregion main */
+   
