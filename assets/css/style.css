@@ -1,15 +1,45 @@
 @import url(./12bool.css);
 
 /* reset rule */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* common rules */
 
-.container{
-    max-width: 1200px;
-    margin-inline: auto;
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 1rem;
 }
+.container .row [class*="col-"] {
+  border: 1px solid white;
+  color: white;
+}
+
+/* #region body */
+body {
+  background-color: gainsboro;
+}
+/* #region main */
+.row {
+  padding: 1rem 0;
+}
+
+[class*="col-"] span {
+  font-size: 0.7rem;
+  padding: 1rem 0;
+}
+
+.nested {
+  padding: 1rem;
+}
+
+.no-content [class*="col-"] {
+  height: 48px;
+  background-color: var(--blue);
+}
+/* #endregion main */
+/* #endregion body */
